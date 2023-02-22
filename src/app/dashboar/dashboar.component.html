@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Halaman Pengaduan</title>
+    <style>
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    </style>
+
+   
+    <style>
+        .image_upload>input {
+            display: none;
+        }
+    </style>
+
+   
+</head>
+
+<body>
+    <div class="container-scroller">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="assets/Pengadu/Image/Logo1.png"
+                        class="mr-2" alt="logo" /></a>
+                <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/Pengadu/Image/Logo1.png"
+                        alt="logo" /></a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end"
+                style="background: linear-gradient(315deg, #000044 0%, #004E92 100%);">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                    <span class="icon-menu"></span>
+                </button>
+                <ul class="navbar-nav mr-lg-2">
+                    <li class="nav-item nav-search d-none d-lg-block">
+
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-nav-right">
+
+                    <li class="nav-item nav-profile dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+
+
+                            <div class="bullet"
+                                style="height:60px; width:60px; border-radius:180px;background:white; margin-top:95px;">
+
+                            </div>
+                            <img src="assets/images/faces/face8.jpg"
+                                style="width: 50px; height:50px; margin-top:-92px; margin-left:5px;" alt="profile" />
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:partials/_settings-panel.html -->
+            <div class="theme-setting-wrapper">
+                <div id="settings-trigger"><i class="ti-settings"></i></div>
+
+            </div>
+            <div id="right-sidebar" class="settings-panel">
+
+
+                <div class="tab-content" id="setting-content">
+                    <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel"
+                        aria-labelledby="todo-section">
+
+
+
+
+
+
+                    </div>
+                    <!-- To do section tab ends -->
+                    <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+
+                        <ul class="chat-list">
+
+
+
+
+
+                        </ul>
+                    </div>
+                    <!-- chat tab ends -->
+                </div>
+            </div>
+            <!-- partial -->
+            <!-- partial:partials/_sidebar.html -->
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="background-color: white; outline:white;">
+                            <i class="icon-grid menu-icon"></i>
+                            <span class="menu-title" style="color: black;">Kelola Data</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.php">
+                            <i class="icon-paper menu-icon"></i>
+                            <span class="menu-title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="background-color: white; outline:white;">
+                            <i class="icon-grid menu-icon"></i>
+                            <span class="menu-title" style="color: black;">Opsi</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/','pengaturan']">
+                            <i class="icon-paper menu-icon"></i>
+                            <span class="menu-title">Pengaturan</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="icon-paper menu-icon"></i>
+                            <span class="menu-title">Keluar</span>
+                        </a>
+                    </li>
+
+
+
+
+
+                </ul>
+            </nav>
+            <!-- partial -->
+            <div class="main-panel">
+                <div class="content-wrapper" style="background-color: white;">
+
+
+
+
+                    <div class="main-panel">
+                        <div class="content-wrapper" style="background-color: white;">
+                            <div class="row">
+                                <div class="col-md-12 grid-margin ">
+
+
+
+                                    <div class="card-body">
+                                        <div class="section">
+
+                                            <div class="col-md-12 grid-margin transparent">
+                                                <div class="row">
+                                                    <div class="col-md-4 mb-4 stretch-card transparent">
+                                                        <div class="card">
+                                                            <div class="card-body" style="background: linear-gradient(135deg, rgba(2, 170, 176, 0.5) 0%, rgba(0, 205, 172, 0.5) 100%);
+border-radius: 16px;">
+                                                                <p class="mb-4">2</p>
+                                                                <p class="fs-30 mb-2" [routerLink]="['/','daftaradmin']">Admin</p>
+                                                                <p>
+                                                                <div class="card data-icon-card-primary">
+                                                                    <div class="card-body">
+
+                                                                        <div class="row">
+                                                                            <div class="col-8 text-white">
+
+                                                                                <p
+                                                                                    class="text-white font-weight-500 mb-0">
+                                                                                    Lihat</p>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="col-md-4 mb-4 stretch-card transparent">
+                                                        <div class="card">
+                                                            <div class="card-body" style="background: linear-gradient(135deg, rgba(2, 170, 176, 0.5) 0%, rgba(0, 205, 172, 0.5) 100%);
+border-radius: 16px;">
+                                                                <p class="mb-4">10</p>
+                                                                <p class="fs-30 mb-2" [routerLink]="['/','daftarpetugas']">Petugas</p>
+                                                                <p>
+                                                                <div class="card data-icon-card-success">
+                                                                    <div class="card-body">
+
+                                                                        <div class="row">
+                                                                            <div class="col-8 text-white">
+
+                                                                                <p
+                                                                                    class="text-white font-weight-500 mb-0">
+                                                                                    Lihat</p>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                               
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-4 mb-4 stretch-card transparent">
+                                                        <div class="card">
+                                                            <div class="card-body" style="background: linear-gradient(135deg, rgba(2, 170, 176, 0.5) 0%, rgba(0, 205, 172, 0.5) 100%);
+border-radius: 16px;">
+                                                                <p class="mb-4">10</p>
+                                                                <p class="fs-30 mb-2" [routerLink]="['/','petugasdaftarpengaduan']">Pengadu</p>
+                                                                <p>
+                                                                <div class="card data-icon-card-success">
+                                                                    <div class="card-body">
+                                                    
+                                                                        <div class="row">
+                                                                            <div class="col-8 text-white">
+                                                    
+                                                                                <p class="text-white font-weight-500 mb-0">
+                                                                                    Lihat</p>
+                                                                            </div>
+                                                    
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    
+
+  
+</body>
+
+</html>

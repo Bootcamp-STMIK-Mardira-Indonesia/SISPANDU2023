@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Riwayat Pengaduan</title>
+
+
+</head>
+
+<body>
+    <div class="container-scroller">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="assets/Pengadu1/Image/Logo1.png"
+                        class="mr-2" alt="logo" /></a>
+                <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/Pengadu1/Image/Logo1.png"
+                        alt="logo" /></a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end"
+                style="background: linear-gradient(315deg, #000044 0%, #004E92 100%);">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                    <span class="icon-menu"></span>
+                </button>
+                <ul class="navbar-nav mr-lg-2">
+                    <li class="nav-item nav-search d-none d-lg-block">
+
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-nav-right">
+                    <li class="nav-item dropdown">
+
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                            aria-labelledby="notificationDropdown">
+                            <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-success">
+                                        <i class="ti-info-alt mx-0"></i>
+                                    </div>
+                                </div>
+                                <div class="preview-item-content">
+                                    <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                                    <p class="font-weight-light small-text mb-0 text-muted">
+                                        Just now
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-warning">
+                                        <i class="ti-settings mx-0"></i>
+                                    </div>
+                                </div>
+                                <div class="preview-item-content">
+                                    <h6 class="preview-subject font-weight-normal">Settings</h6>
+                                    <p class="font-weight-light small-text mb-0 text-muted">
+                                        Private message
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-info">
+                                        <i class="ti-user mx-0"></i>
+                                    </div>
+                                </div>
+                                <div class="preview-item-content">
+                                    <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                                    <p class="font-weight-light small-text mb-0 text-muted">
+                                        2 days ago
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-profile dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+
+
+                            <div class="bullet"
+                                style="height:60px; width:60px; border-radius:180px;background:white; margin-top:65px;">
+
+                            </div>
+                            <img src="assets/images1/faces/face8.jpg"
+                                style="width: 50px; height:50px; margin-top:60px; margin-left:-55px;" alt="profile" />
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
+                            aria-labelledby="profileDropdown">
+                            <a class="dropdown-item">
+                                <i class="ti-settings text-primary"></i>
+                                Settings
+                            </a>
+                            <a class="dropdown-item">
+                                <i class="ti-power-off text-primary"></i>
+                                Logout
+                            </a>
+                        </div>
+                    </li>
+
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                    data-toggle="offcanvas">
+                    <span class="icon-menu"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:partials/_settings-panel.html -->
+            <div class="theme-setting-wrapper">
+
+
+            </div>
+
+
+            <!-- partial -->
+            <!-- partial:partials/_sidebar.html -->
+            <nav class="sidebar sidebar-offcanvas" id="sidebar" style="margin-top: -60px;">
+                <ul class="nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false"
+                            aria-controls="ui-basic">
+                            <i class="icon-layout menu-icon"></i>
+                            <span class="menu-title">Laporan Terkini</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="ui-basic">
+                            <ul class="nav flex-column sub-menu" style="background-color: transparent;">
+                                <li class="nav-item"> <a class="nav-link" href="index.php" style="color: black;">Daftar
+                                        Pengadu</a></li>
+
+                                <li class="nav-item"> <a class="nav-link" href="pelaku.php"
+                                        style="color: black;" [routerLink]="['/','riwayatpengaduan']">Riwayat Pengadu</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="background-color: white; outline:white;">
+                            <i class="icon-grid menu-icon"></i>
+                            <span class="menu-title" style="color: black;">Opsi</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/','pengaturan']">
+                            <i class="icon-paper menu-icon"></i>
+                            <span class="menu-title">Pengaturan</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="assets/pages1/documentation/documentation.html">
+                            <i class="icon-paper menu-icon"></i>
+                            <span class="menu-title">Keluar</span>
+                        </a>
+                    </li>
+
+
+
+
+
+                </ul>
+            </nav>
+            <!-- partial -->
+            <div class="main-panel">
+                <div class="content-wrapper" style="background-color:white;">
+
+
+
+
+                    <div class="row">
+                        <div class="col-md-12 grid-margin stretch-card" style="border: none;">
+
+                            <div class="card" style="border: none;">
+
+                                <div class="card-body" style="margin-top:10px;">
+
+                                    <div class="row">
+                                        <div class="col-6">
+                                            Pengadu
+
+                                            <div>
+
+
+                                                <table class="table table-hover" border="0">
+                                                    <thead>
+
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="width:45px;">
+                                                                <img src="assets/Pengadu/Icon/profile.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="height: 30px;">
+                                                            </td>
+                                                            <td>Asep Hidayat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:45px;">
+                                                                <img src="assets/Pengadu/Icon/profile.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="height: 30px;">
+                                                            </td>
+                                                            <td>3277493986385</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:45px;">
+                                                                <img src="assets/Pengadu/Icon/profile.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="height: 30px;">
+                                                            </td>
+                                                            <td>Bandung, 9 September 1999</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:45px;">
+                                                                <img src="assets/Pengadu/Icon/profile.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="height: 30px;">
+                                                            </td>
+                                                            <td>Ujung Aspal Pondok Gede, Jakarta</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:45px;">
+                                                                <img src="assets/Pengadu/Icon/profile.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="height: 30px;">
+                                                            </td>
+                                                            <td>Laki-laki</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:45px;">
+                                                                <img src="assets/Pengadu/Icon/profile.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="height: 30px;">
+                                                            </td>
+                                                            <td>Islam</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:45px;">
+                                                                <img src="assets/Pengadu/Icon/profile.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="height: 30px;">
+                                                            </td>
+                                                            <td>Diploma 3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:45px;">
+                                                                <img src="assets/Pengadu/Icon/profile.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="height: 30px;">
+                                                            </td>
+                                                            <td>Freelancer</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            Korban
+                                            <div>
+
+
+                                                <table class="table table-hover">
+                                                    <thead>
+
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="width:45px;">
+                                                                <img src="assets/Pengadu/Icon/profile.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="height: 30px;">
+                                                            </td>
+                                                            <td>Yati Sumiati</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:45px;">
+                                                                <img src="assets/Pengadu/Icon/profile.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="height: 30px;">
+                                                            </td>
+                                                            <td>3204110808080002</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:45px;">
+                                                                <img src="assets/Pengadu/Icon/profile.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="height: 30px;">
+                                                            </td>
+                                                            <td>Bandung, 8 Agustus 2008</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:45px;">
+                                                                <img src="assets/Pengadu/Icon/profile.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="height: 30px;">
+                                                            </td>
+                                                            <td>Ujung Aspal Pondok Gede, Jakarta</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:45px;">
+                                                                <img src="assets/Pengadu/Icon/profile.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="height: 30px;">
+                                                            </td>
+                                                            <td>Perempuan</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:45px;">
+                                                                <img src="assets/Pengadu/Icon/profile.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="height: 30px;">
+                                                            </td>
+                                                            <td>Islam</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:45px;">
+                                                                <img src="assets/Pengadu/Icon/profile.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="height: 30px;">
+                                                            </td>
+                                                            <td>SMP</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:45px;">
+                                                                <img src="assets/Pengadu/Icon/profile.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="height: 30px;">
+                                                            </td>
+                                                            <td>Siswa</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+
+
+
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="col-6">
+                                            Pelaku
+
+                                            <div>
+
+
+                                                <table class="table table-hover">
+                                                    <thead>
+
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="width:45px;">
+                                                                <img src="assets/Pengadu/Icon/profile.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="height: 30px;">
+                                                            </td>
+                                                            <td>Ujang Sujana</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:45px;">
+                                                                <img src="assets/Pengadu/Icon/profile.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="height: 30px;">
+                                                            </td>
+                                                            <td>3204110707770007</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:45px;">
+                                                                <img src="assets/Pengadu/Icon/profile.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="height: 30px;">
+                                                            </td>
+                                                            <td>Jakarta, 7 Juli 1977</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:45px;">
+                                                                <img src="assets/Pengadu/Icon/profile.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="height: 30px;">
+                                                            </td>
+                                                            <td>Kemang, Jakarta Tenggara</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:45px;">
+                                                                <img src="assets/Pengadu/Icon/profile.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="height: 30px;">
+                                                            </td>
+                                                            <td>Laki-laki</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:45px;">
+                                                                <img src="assets/Pengadu/Icon/profile.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="height: 30px;">
+                                                            </td>
+                                                            <td>Islam</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:45px;">
+                                                                <img src="assets/Pengadu/Icon/profile.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="height: 30px;">
+                                                            </td>
+                                                            <td>SMA</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:45px;">
+                                                                <img src="assets/Pengadu/Icon/profile.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="height: 30px;">
+                                                            </td>
+                                                            <td>Sopir</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+
+
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            Bukti
+
+                                            <div>
+
+
+                                                <table class="table table-hover">
+                                                    <thead>
+
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <img src="assets/Pengadu/layout image/a.jpg"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="width:100px; height:100px;">
+                                                            </td>
+                                                            <td><img src="assets/Pengadu/layout image/b.webp"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="width:100px; height:100px;"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <img src="assets/Pengadu/layout image/c.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="width:100px; height:100px;">
+                                                            </td>
+                                                            <td><img src="assets/Pengadu/layout image/d.png"
+                                                                    class="img-responsive" alt="Image"
+                                                                    style="width:100px; height:100px;"></td>
+                                                        </tr>
+
+
+
+
+
+
+                                                    </tbody>
+                                                </table>
+
+
+
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-12">
+                                            <h4>Kronologis</h4>
+                                            <div>
+
+                                                <table class="table table-hover" border="none">
+                                                    <thead>
+
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                <br> Nam fugit nulla sit ducimus quo porro et, in eum
+                                                                laborum. Culpa dicta omnis <br> doloribus obcaecati
+                                                                reiciendis rerum, neque unde incidunt aliquam.</td>
+
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="row">
+
+
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+
+        <!-- partial -->
+    </div>
+
+    <!-- End custom js for this page-->
+</body>
+
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Halaman Pengaduan</title>
+    <style>
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    </style>
+
+    <!-- plugins:css -->
+    <!-- <link rel="stylesheet" href="assets/vendors/feather/feather.css">
+      <link rel="stylesheet" href="assets/vendors/ti-icons/css/themify-icons.css">
+      <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css"> -->
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <style>
+        .image_upload>input {
+            display: none;
+        }
+    </style>
+
+    <!-- <link rel="stylesheet" href="assets/vendors/ti-icons/css/themify-icons.css"> -->
+
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- <link rel="stylesheet" href="assets/css/vertical-layout-light/style.css"> -->
+    <!-- endinject -->
+    <!-- <link rel="shortcut icon" href="assets/images/favicon.png" /> -->
+</head>
+
+<body>
+    <div class="container-scroller">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="assets/Pengadu1/Image/Logo1.png"
+                        class="mr-2" alt="logo" /></a>
+                <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/Pengadu1/Image/Logo1.png"
+                        alt="logo" /></a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end"
+                style="background: linear-gradient(315deg, #000044 0%, #004E92 100%);">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                    <span class="icon-menu"></span>
+                </button>
+                <ul class="navbar-nav mr-lg-2">
+                    <li class="nav-item nav-search d-none d-lg-block">
+
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-nav-right">
+
+                    <li class="nav-item nav-profile dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+
+
+                            <div class="bullet"
+                                style="height:60px; width:60px; border-radius:180px;background:white; margin-top:65px;">
+
+                            </div>
+                            <img src="assets/images1/faces/face8.jpg"
+                                style="width: 50px; height:50px; margin-top:60px; margin-left:-55px;" alt="profile" />
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:partials/_settings-panel.html -->
+
+            <div id="right-sidebar" class="settings-panel">
+
+
+                <div class="tab-content" id="setting-content">
+                    <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel"
+                        aria-labelledby="todo-section">
+
+
+
+
+
+
+                    </div>
+                    <!-- To do section tab ends -->
+                    <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+
+                        <ul class="chat-list">
+
+
+
+
+
+                        </ul>
+                    </div>
+                    <!-- chat tab ends -->
+                </div>
+            </div>
+            <!-- partial -->
+            <!-- partial:partials/_sidebar.html -->
+            <nav class="sidebar sidebar-offcanvas" id="sidebar" style="margin-top: -50px;">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="background-color: white; outline:white;">
+                            <i class="icon-grid menu-icon"></i>
+                            <span class="menu-title" style="color: black;">Laporan Saya</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false"
+                            aria-controls="ui-basic">
+                            <i class="icon-layout menu-icon"></i>
+                            <span class="menu-title">Data Pengaduan</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="ui-basic">
+                            <ul class="nav flex-column sub-menu" style="background-color: transparent;">
+                                <li class="nav-item"> <a class="nav-link" href="index.php"
+                                        style="color: black;">Pengadu</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="halaman_korban.php"
+                                        style="color: black;">Korban</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="pelaku.php"
+                                        style="color: black;">Pelaku</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="riwayat_pengaduan.php" >
+                            <i class="icon-paper menu-icon"></i>
+                            <span class="menu-title">Riwayat Pengaduan</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="background-color: white; outline:white;">
+                            <i class="icon-grid menu-icon"></i>
+                            <span class="menu-title" style="color: black;">Opsi</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/','pengaturan']">
+                            <i class="icon-paper menu-icon"></i>
+                            <span class="menu-title">Pengaturan</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="icon-paper menu-icon"></i>
+                            <span class="menu-title" [routerLink]="['/','Landing']">Keluar</span>
+                        </a>
+                    </li>
+
+
+
+
+
+                </ul>
+            </nav>
+            <!-- partial -->
+            <div class="main-panel">
+                <div class="content-wrapper" style="background-color: white;">
+                    <div class="row">
+                        <div class="col-md-12 grid-margin" style="margin-top: -100px;">
+                            <div class="row">
+                                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                                    <h3 class="font-weight-bold">Teradu</h3>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="main-panel">
+                        <div class="content-wrapper" style="background-color: white;">
+                            <div class="row">
+                                <div class="col-md-12 grid-margin ">
+
+
+
+                                    <div class="card-body"
+                                        style="background : linear-gradient(135deg, #C2E9FB 0%, #A1C4FD 100%);border-radius:15px; height:640px;margin-top:-60px; margin-left:-30px;">
+                                        <div class="section">
+
+                                            <div style="">
+                                                <form action="" role="form">
+
+
+
+
+
+
+                                                    <div class="table-responsive">
+                                                        <table class="table" style="margin-left: 112px;">
+                                                            <thead>
+
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="border: none;">Nama Lengkap <br><br>
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control"
+                                                                                style="width:200px"
+                                                                                formControlName="nama">
+                                                                        </div>
+                                                                    </td>
+
+
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td style="border: none;">No Ktp/ Sim/
+                                                                        Pasport<br><br>
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control"
+                                                                                style="width:200px"
+                                                                                formControlName="no_ktp">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="border: none; margin-left:-10px;">Tempat,
+                                                                        Tanggal Lahir <br><br>
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control"
+                                                                                style="width:200px"
+                                                                                formControlName="ttl">
+                                                                        </div>
+                                                                    </td>
+
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td style="border: none;">Alamat <br><br>
+                                                                        <div class="form-group">
+                                                                            <textarea name="" id="" class="form-control"
+                                                                                style="width:200px; height:90px;"
+                                                                                formControlName="alamat"> </textarea>
+                                                                        </div>
+
+                                                                    </td>
+                                                                    <td style="border: none;">
+                                                                        Kabupaten / Kota <br><br>
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control"
+                                                                                name="" style="width:200px"
+                                                                                formControlName="kota">
+                                                                        </div><br>
+                                                                        Provinsi <br><br>
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control"
+                                                                                name="" style="width:200px;"
+                                                                                formControlName="provinsi">
+                                                                        </div>
+                                                                    </td>
+
+
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td style="border: none;">Pendidikan<br><br>
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control"
+                                                                                name="" id="" style="width:200px"
+                                                                                formControlName="pendidikan">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="border: none;">Pekerjaan <br><br>
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control"
+                                                                                name="" id="" style="width:200px"
+                                                                                formControlName="pekerjaan">
+                                                                        </div>
+                                                                    </td>
+
+                                                                </tr>
+
+
+                                                                <tr>
+                                                                    <td style="border: none;">Jenis Kelamin <br><br>
+                                                                        <div class="form-group">
+                                                                            <input type="radio" value=""
+                                                                                formControlName="jk">Laki - Laki
+                                                                            <input type="radio" value=""
+                                                                                formControlName="jk">Perempuan
+                                                                        </div>
+                                                                    </td>
+
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td style="border: none;">Agama <br><br>
+                                                                        <div class="form-group">
+                                                                            <input type="radio" value=""
+                                                                                formControlName="agama">Islam
+                                                                            <input type="radio" value=""
+                                                                                formControlName="agama">Kristen
+                                                                            <input type="radio" value=""
+                                                                                formControlName="agama">Hindu
+                                                                            <input type="radio" value=""
+                                                                                formControlName="agama">Budha
+                                                                            <input type="radio" value=""
+                                                                                formControlName="agama">Konghucu
+                                                                            <input type="radio" value=""
+                                                                                formControlName="agama">Lainnya
+
+                                                                        </div>
+                                                                    </td>
+
+
+                                                                </tr>
+
+
+                                                            </tbody>
+                                                        </table>
+
+                                                    </div>
+
+                                                    <!-- </div> -->
+
+                                                    <!-- </div> -->
+
+                                                    <!-- </div> -->
+
+                                                    <br>
+
+
+
+                                                    <div class="form-group">
+                                                        <label for="input"
+                                                            class="col-sm-2 control-label">Kronologi</label>
+                                                        <div class="col-sm-10"><br>
+                                                            <textarea name="" id="input" class="form-control" rows="3"
+                                                                required="required"
+                                                                style="width :575px; margin-left:-120px;"
+                                                                ormControlName="kronologi"></textarea>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="input" class="col-sm-2 control-label">Bukti</label>
+                                                        <div class="col-sm-10"><br>
+
+                                                            <p class="image_upload">
+                                                                <label for="userImage">
+                                                                    <a class="form-control" rel="nofollow"
+                                                                        style=" text-align:center;width:575px; color:#373440; margin-left:-120px;font-size:10px;">
+                                                                        Drop File Disini ! (PNG, JPG , JPEG)</a>
+                                                                </label>
+                                                                <input type="file" name="userImage" id="userImage"
+                                                                    formControlName="bukti"
+                                                                    style="width :643px; margin-left:-120px;">
+
+                                                        </div>
+                                                    </div>
+
+
+
+
+                                                    <br>
+                                                    <!-- <center> -->
+                                                    <button type="submit" class="btn btn-primary" style="background: linear-gradient(135deg, #000044 0%, #004E92 100%);
+box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.2);border-radius: 32px;margin-left:250px;"
+                                                        [routerLink]="['/','listpengaduan']">Kirim</button>
+                                                    <!-- </center> -->
+                                                    <br>
+
+
+
+
+
+
+                                                </form>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <!-- </div> -->
+
+    <!-- <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+
+      <script src="assets/vendors/chart.js/Chart.min.js"></script>
+
+
+      <script src="assets/js/off-canvas.js"></script>
+      <script src="assets/js/hoverable-collapse.js"></script>
+      <script src="assets/js/template.js"></script>
+      <script src="assets/js/settings.js"></script>
+      <script src="assets/js/todolist.js"></script>
+
+
+      <script src="assets/js/Chart.roundedBarCharts.js"></script> -->
+
+</body>
+
+</html>

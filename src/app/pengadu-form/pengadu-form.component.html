@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Halaman Pengaduan</title>
+    <style>
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    </style>
+
+    <!-- plugins:css -->
+    
+    <style>
+        .image_upload>input {
+            display: none;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container-scroller">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="assets/Pengadu/Image/Logo1.png"
+                        class="mr-2" alt="logo" /></a>
+                <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/Pengadu/Image/Logo1.png"
+                        alt="logo" /></a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end"
+                style="background: linear-gradient(315deg, #000044 0%, #004E92 100%);">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                    <span class="icon-menu"></span>
+                </button>
+                <ul class="navbar-nav mr-lg-2">
+                    <li class="nav-item nav-search d-none d-lg-block">
+
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-nav-right">
+
+                    <li class="nav-item nav-profile dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+
+
+                            <div class="bullet"
+                                style="height:60px; width:60px; border-radius:180px;background:white; margin-top:65px;">
+
+                            </div>
+                            <img src="assets/images1/faces/face8.jpg"
+                                style="width: 50px; height:50px; margin-top:60px; margin-left:-55px;" alt="profile" />
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:partials/_settings-panel.html -->
+            <div class="theme-setting-wrapper">
+               
+            </div>
+            <div id="right-sidebar" class="settings-panel">
+
+
+                <div class="tab-content" id="setting-content">
+                    <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel"
+                        aria-labelledby="todo-section">
+
+
+
+
+
+
+                    </div>
+                    <!-- To do section tab ends -->
+                    <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+
+                        <ul class="chat-list">
+
+
+
+
+
+                        </ul>
+                    </div>
+                    <!-- chat tab ends -->
+                </div>
+            </div>
+            <!-- partial -->
+            <!-- partial:partials/_sidebar.html -->
+            <nav class="sidebar sidebar-offcanvas" id="sidebar" style="margin-top: -60px;">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="background-color: white; outline:white;">
+                            <i class="icon-grid menu-icon"></i>
+                            <span class="menu-title" style="color: black;">Laporan Saya</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false"
+                            aria-controls="ui-basic">
+                            <i class="icon-layout menu-icon"></i>
+                            <span class="menu-title">Data Pengaduan</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="ui-basic">
+                            <ul class="nav flex-column sub-menu" style="background-color: transparent;">
+                                <li class="nav-item"> <a class="nav-link" href="index.php" style="color: black;"
+                                        [routerLink]="['/','pengadu']">Pengadu</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="halaman_korban.php" style="color: black;"
+                                        [routerLink]="['/','korban']">Korban</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="pelaku.php" style="color: black;"
+                                        [routerLink]="['/','pengaduanform']">Pelaku</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/','riwayatpengaduan']">
+                            <i class="icon-paper menu-icon"></i>
+                            <span class="menu-title">Riwayat Pengaduan</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="background-color: white; outline:white;">
+                            <i class="icon-grid menu-icon"></i>
+                            <span class="menu-title" style="color: black;">Opsi</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/','pengaturan']">
+                            <i class="icon-paper menu-icon"></i>
+                            <span class="menu-title">Pengaturan</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="icon-paper menu-icon"></i>
+                            <span class="menu-title">Keluar</span>
+                        </a>
+                    </li>
+
+
+
+
+
+                </ul>
+            </nav>
+            <!-- partial -->
+            <div class="main-panel">
+                <div class="content-wrapper" style="background-color: white;">
+                    <div class="row">
+                        <div class="col-md-12 grid-margin">
+                            <div class="row">
+                                <div class="col-12 col-xl-8 mb-4 mb-xl-0" style="margin-top: -80px;">
+                                    <h3 class="font-weight-bold">Pengadu</h3>
+
+                                </div>
+                                <div class="col-12 col-xl-4">
+                                    <div class="justify-content-end d-flex">
+                                        <div class="dropdown flex-md-grow-1 flex-xl-grow-0" style="margin-top:-50px;">
+
+                                            <span class="label label-info"
+                                                style="font-size: 12px; margin-left:65px; background-color: transparent;color:black;">Tambahkan Asep hidayat
+                                                Sebagai Pengadu?</span><br>
+
+                                            <button class="btn btn-success" type="submit"
+                                                style="border-radius: 32px;height:48px;width:200px;margin-left:115px;background: linear-gradient(135deg, #02AAB0 0%, #00CDAC 100%);">
+                                               Tambahkan +
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="main-panel">
+                        <div class="content-wrapper" style="background-color: white;">
+                            <div class="row">
+                                <div class="col-md-12 grid-margin ">
+
+
+
+                                    <div class="card-body"
+                                        style="background : linear-gradient(135deg, #C2E9FB 0%, #A1C4FD 100%);border-radius:15px;">
+                                        <div class="section">
+
+                                            <div>
+                                                <form action=""  role="form" style="height:700px;">
+
+
+
+
+
+
+                                                    <div class="table-responsive">
+                                                        <table class="table" style="margin-left: 112px;">
+                                                            <thead>
+
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="border: none;">Nama Lengkap <br><br>
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control"
+                                                                                style="width: 312px;">
+                                                                        </div>
+                                                                    </td>
+
+
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td style="border: none;">No Ktp/ Sim/
+                                                                        Pasport<br><br>
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control"
+                                                                                style="width: 312px;">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="border: none; margin-left:-10px;">Tempat,
+                                                                        Tanggal Lahir <br><br>
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control"
+                                                                                style="width: 312px;">
+                                                                        </div>
+                                                                    </td>
+
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td style="border: none;">Alamat <br><br>
+                                                                        <div class="form-group">
+                                                                            <textarea name="" id="" class="form-control"
+                                                                                style="width:312px; height:90px;"></textarea>
+                                                                        </div>
+
+                                                                    </td>
+                                                                    <td style="border: none;">
+                                                                        Kabupaten / Kota <br><br>
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control"
+                                                                                name="" style="width: 312px;">
+                                                                        </div><br>
+                                                                        Provinsi <br><br>
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control"
+                                                                                name="" style="width:312px;">
+                                                                        </div>
+                                                                    </td>
+
+
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td style="border: none;">Pendidikan<br><br>
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control"
+                                                                                name="" id="" style="width: 312px;">
+                                                                        </div>
+                                                                    </td>
+                                                                    <td style="border: none;">Pekerjaan <br><br>
+                                                                        <div class="form-group">
+                                                                            <input type="email" class="form-control"
+                                                                                name="" id="" style="width: 312px;">
+                                                                        </div>
+                                                                    </td>
+
+                                                                </tr>
+
+
+                                                                <tr>
+                                                                    <td style="border: none;">Jenis Kelamin <br><br>
+                                                                        <div class="form-group">
+                                                                            <input type="radio" value="">Laki - Laki
+                                                                            <input type="radio" value="">Perempuan
+                                                                        </div>
+                                                                    </td>
+
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td style="border: none;">Agama <br><br>
+                                                                        <div class="form-group">
+                                                                            <input type="radio" value="">Islam
+                                                                            <input type="radio" value="">Kristen
+                                                                            <input type="radio" value="">Hindu
+                                                                            <input type="radio" value="">Budha
+                                                                            <input type="radio" value="">Konghucu
+                                                                            <input type="radio" value="">Lainnya
+
+                                                                        </div>
+                                                                    </td>
+
+
+                                                                </tr>
+
+
+                                                            </tbody>
+                                                        </table>
+
+                                                    </div>
+
+                                         
+
+                                        
+
+                                    
+
+                                    <br>
+
+
+
+
+
+
+
+
+
+                                    <br>
+                                   
+                                        <button type="submit" class="btn btn-primary" style="background: linear-gradient(135deg, #000044 0%, #004E92 100%);box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.2);border-radius: 32px; margin-top:70px; margin-left:280px;">Simpan</button>
+                                  
+                                    <br>
+
+
+
+
+
+
+                                    </form>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    </div>
+
+
+
+    </div>
+
+    </div>
+
+
+
+    
+
+</body>
+
+</html>
