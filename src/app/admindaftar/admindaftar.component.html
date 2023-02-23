@@ -178,16 +178,16 @@
                         <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false"
                             aria-controls="ui-basic">
                             <i class="icon-layout menu-icon"></i>
-                            <span class="menu-title">Laporan Terkini</span>
+                            <span class="menu-title">Kelola Data</span>
                             <i class="menu-arrow"></i>
                         </a>
                         <div class="collapse" id="ui-basic">
                             <ul class="nav flex-column sub-menu" style="background-color: transparent;">
-                                <li class="nav-item"> <a class="nav-link" href="index.php" style="color: black;">Daftar
-                                        Pengadu</a></li>
+                                <li class="nav-item"> <a class="nav-link" [routerLink]="['/','admindaftar']" style="color: black;">Admin</a></li>
 
-                                <li class="nav-item"> <a class="nav-link"[routerLink]="['/','riwayatpengaduan']"
-                                        style="color: black;">Riwayat Pengadu</a></li>
+                                <li class="nav-item"> <a class="nav-link"[routerLink]="['/','daftarpetugas']"
+                                        style="color: black;">Petugas</a></li>
+                                        <li class="nav-item"> <a class="nav-link" [routerLink]="['/','petugasdaftarpengaduan']" style="color: black;">Pengadu</a></li>
                             </ul>
                         </div>
                     </li>
@@ -205,7 +205,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="assets/pages1/documentation/documentation.html">
+                        <a class="nav-link" onclick="return confirm('Anda Telah Keluar Aplkasi');" [routerLink]="['/','Login']">
                             <i class="icon-paper menu-icon"></i>
                             <span class="menu-title">Keluar</span>
                         </a>

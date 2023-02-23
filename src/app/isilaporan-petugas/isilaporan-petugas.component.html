@@ -126,38 +126,22 @@
                         <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false"
                             aria-controls="ui-basic">
                             <i class="icon-layout menu-icon"></i>
-                            <span class="menu-title">Laporan Terkini</span>
+                            <span class="menu-title">Detail Pengaduan</span>
                             <i class="menu-arrow"></i>
                         </a>
                         <div class="collapse" id="ui-basic">
                             <ul class="nav flex-column sub-menu" style="background-color: transparent;">
-                                <li class="nav-item"> <a class="nav-link" href="index.php" style="color: black;">Daftar
-                                        Pengadu</a></li>
+                                <li class="nav-item"> <a class="nav-link" [routerLink]="['/','isilaporanpetugas']" style="color: black;">P001 - 
+                                        Asep Hidayat</a></li>
 
-                                <li class="nav-item"> <a class="nav-link" href="pelaku.php"
-                                        style="color: black;" [routerLink]="['/','riwayatpengaduan']">Riwayat Pengadu</a></li>
+                              
                             </ul>
                         </div>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="background-color: white; outline:white;">
-                            <i class="icon-grid menu-icon"></i>
-                            <span class="menu-title" style="color: black;">Opsi</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" [routerLink]="['/','pengaturan']">
-                            <i class="icon-paper menu-icon"></i>
-                            <span class="menu-title">Pengaturan</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="assets/pages1/documentation/documentation.html">
-                            <i class="icon-paper menu-icon"></i>
-                            <span class="menu-title">Keluar</span>
-                        </a>
-                    </li>
+                    
+                   
+                   
 
 
 
@@ -470,17 +454,17 @@
             <td border="0">
             <button type="button" class="btn btn-default" style="background: linear-gradient(135deg, #C8E97C 0%, #5FB828 0.01%);
 box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.2);
-border-radius: 32px; color:white;">Terima</button>
+border-radius: 32px; color:white;" onclick="return confirm('Laporan di Terima');">Terima</button>
             </td>
                         <td border="0">
             <button type="button" class="btn btn-default" style="background: linear-gradient(135deg, #2193B0 92.31%, #6DD5ED 100%);
 box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.2);
-border-radius: 32px; color:white;">Beri Tanggapan</button>
+border-radius: 32px; color:white;" [routerLink]="['/','tanggapan']">Beri Tanggapan</button>
             </td>
                         <td border="0">
                             <button type="button" class="btn btn-default" style="background: linear-gradient(135deg, #EB3349 0%, #F45C43 100%);
 box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.2);
-border-radius: 32px; color:white;">Tolak</button>
+border-radius: 32px; color:white;" onclick="return confirm('Laporan D i Tolak');">Tolak</button>
                         </td>
         </tr>
     </tbody>

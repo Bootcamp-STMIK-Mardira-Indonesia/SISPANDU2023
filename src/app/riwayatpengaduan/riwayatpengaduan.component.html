@@ -306,20 +306,18 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false"
-                            aria-controls="ui-basic">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
                             <i class="icon-layout menu-icon"></i>
-                            <span class="menu-title">Data Pengaduan</span>
+                            <span class="menu-title">Laporan Terkini</span>
                             <i class="menu-arrow"></i>
                         </a>
                         <div class="collapse" id="ui-basic">
                             <ul class="nav flex-column sub-menu" style="background-color: transparent;">
-                                <li class="nav-item"> <a class="nav-link" href="index.php"
-                                        style="color: black;">Pengadu</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="halaman_korban.php"
-                                        style="color: black;">Korban</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pelaku.php"
-                                        style="color: black;">Pelaku</a></li>
+                                <li class="nav-item"> <a class="nav-link" [routerLink]="['/','petugasdaftarpengaduan']" style="color: black;">Daftar
+                                        Pengadu</a></li>
+                    
+                                <li class="nav-item"> <a class="nav-link" [routerLink]="['/','riwayatpengaduan']"
+                                        style="color: black;">Riwayat Pengadu</a></li>
                             </ul>
                         </div>
                     </li>
@@ -342,7 +340,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="assets/pages1/documentation/documentation.html">
+                        <a class="nav-link" onclick="return confirm('Anda Telah Keluar Aplkasi');" [routerLink]="['/','Login']">
                             <i class="icon-paper menu-icon"></i>
                             <span class="menu-title">Keluar</span>
                         </a>
